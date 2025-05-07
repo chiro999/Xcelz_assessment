@@ -8,7 +8,7 @@
 
 - **User-Friendly Interface**
 - **Responsive Design**
-- **Filter Properties**
+- **Add Property**
 - **Property Details**
 
 ## Tools Used
