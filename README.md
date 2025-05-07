@@ -16,6 +16,8 @@
 - **React.js**
 - **Vite**
 - **Tailwind CSS**
+- **Express**
+- **MySQL**
 
 ## Getting Started
 
