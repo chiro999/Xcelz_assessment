@@ -62,7 +62,7 @@ Ensure you have Node.js and npm (Node Package Manager) installed on your system.
    imageURL TEXT
    );
 
-6. Run the seed.js file to populated the database:
+6. Run the seed.js file to populate the database:
 
    ```bash
    node seed.js
