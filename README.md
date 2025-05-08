@@ -56,15 +56,15 @@ Ensure you have Node.js and npm (Node Package Manager) installed on your system.
    ```sql
    CREATE DATABASE itemdb;
    USE itemdb;
-  CREATE TABLE properties (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  propertyName VARCHAR(255),
-  price VARCHAR(50),
-  priceInUSD DECIMAL(10, 2),
-  bedrooms INT,
-  bathrooms INT,
-  location VARCHAR(100),
-  imageURL TEXT
+   CREATE TABLE properties (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   propertyName VARCHAR(255),
+   price VARCHAR(50),
+   priceInUSD DECIMAL(10, 2),
+   bedrooms INT,
+   bathrooms INT,
+   location VARCHAR(100),
+   imageURL TEXT
 );
 
 4. Start the development server:
