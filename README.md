@@ -35,7 +35,7 @@ Ensure you have Node.js and npm (Node Package Manager) installed on your system.
 2. Navigate to the project directory:
 
    ```bash
-   cd real-estate
+   cd Xcelz_assessment
    
 3. Install the dependencies:
 
