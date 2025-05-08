@@ -21,10 +21,12 @@ const AddProperty = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("https://xcelz-assessment.onrender.com/api/properties", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData)
+    const API_BASE = import.meta.env.VITE_API_URL;
+
+    const res = await fetch(`${API_BASE}/api/properties`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(formData)
     });
 
     const result = await res.json();
