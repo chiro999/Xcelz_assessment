@@ -42,11 +42,6 @@ Ensure you have Node.js and npm (Node Package Manager) installed on your system.
    ```bash
    npm install
 
-3. Install the dependencies:
-
-   ```bash
-   npm install
-
 4. Install the MySQL:
 
    - Download and Install MySQL Community Server.
@@ -67,7 +62,18 @@ Ensure you have Node.js and npm (Node Package Manager) installed on your system.
    imageURL TEXT
 );
 
-4. Start the development server:
+6. Run the seed.js file to populated the database:
+
+   ```bash
+   node seed.js
+
+7. Start the backend server:
+
+   ```bash
+   nose server.js
+
+
+7. Start the development server:
 
    ```bash
    npm run dev
