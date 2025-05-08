@@ -7,7 +7,9 @@ const AppProvider = ({ children }) => {
   const [propertydata, setPropertyData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/properties")
+    const API_BASE = import.meta.env.VITE_API_URL;
+
+    fetch(`${API_BASE}/api/properties`)
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data)) {
@@ -24,7 +26,6 @@ const AppProvider = ({ children }) => {
       });
   }, []);
 
-  // Optional: keep for dropdowns or display, even without filtering
   const cities = [...new Set(propertydata.map((cur) => cur.location))];
   const bedRooms = [...new Set(propertydata.map((cur) => cur.bedrooms))];
 
