@@ -70,7 +70,7 @@ Ensure you have Node.js and npm (Node Package Manager) installed on your system.
 7. Start the backend server:
 
    ```bash
-   nose server.js
+   node server.js
 
 
 7. Start the development server:
