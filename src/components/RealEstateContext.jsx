@@ -7,7 +7,9 @@ const AppProvider = ({ children }) => {
   const [propertydata, setPropertyData] = useState([]);
 
   useEffect(() => {
-    fetch("https://xcelz-assessment.onrender.com/api/properties")
+    const API_BASE = import.meta.env.VITE_API_URL;
+
+    fetch(`${API_BASE}/api/properties`)
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data)) {
