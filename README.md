@@ -56,7 +56,6 @@ Ensure you have Node.js and npm (Node Package Manager) installed on your system.
    ```sql
    CREATE DATABASE itemdb;
    USE itemdb;
-
   CREATE TABLE properties (
   id INT AUTO_INCREMENT PRIMARY KEY,
   propertyName VARCHAR(255),
