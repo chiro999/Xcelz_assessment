@@ -4,7 +4,7 @@ const AddProperty = () => {
   const [formData, setFormData] = useState({
     propertyName: "",
     price: "",
-    priceInUSD:"",
+    priceInUSD: "",
     bedrooms: "",
     bathrooms: "",
     location: "",
@@ -12,7 +12,7 @@ const AddProperty = () => {
   });
 
   const handleChange = (e) => {
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value
     }));
@@ -20,8 +20,9 @@ const AddProperty = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const API_BASE = import.meta.env.VITE_API_URL;
 
-    const res = await fetch("http://localhost:5000/api/properties", {
+    const res = await fetch(`${API_BASE}/api/properties`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData)
@@ -39,7 +40,6 @@ const AddProperty = () => {
         location: "",
         imageURL: ""
       });
-      // 🔁 Redirect to property listing page to see new entry
       window.location.href = "/properties";
     } else {
       alert("Failed to add property: " + result.error);
