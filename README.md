@@ -1,4 +1,4 @@
-# Real Estate Project
+# Property Listings Project
 
 **PillowSpot** is a modern web application built with React.js, Vite, and Tailwind CSS, designed to provide an intuitive and seamless experience for browsing real estate listings. 
 
