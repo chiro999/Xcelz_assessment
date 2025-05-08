@@ -7,7 +7,7 @@ const AppProvider = ({ children }) => {
   const [propertydata, setPropertyData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/properties")
+    fetch("https://xcelz-assessment.onrender.com/api/properties")
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data)) {
