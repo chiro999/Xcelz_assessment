@@ -21,12 +21,10 @@ const AddProperty = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const API_BASE = import.meta.env.VITE_API_URL;
-
-    const res = await fetch(`${API_BASE}/api/properties`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(formData)
+    const res = await fetch("http://localhost:5000/api/properties", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData)
     });
 
     const result = await res.json();
