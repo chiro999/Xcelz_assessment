@@ -60,7 +60,7 @@ Ensure you have Node.js and npm (Node Package Manager) installed on your system.
    bathrooms INT,
    location VARCHAR(100),
    imageURL TEXT
-);
+   );
 
 6. Run the seed.js file to populated the database:
 
