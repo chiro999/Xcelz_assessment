@@ -7,9 +7,7 @@ const AppProvider = ({ children }) => {
   const [propertydata, setPropertyData] = useState([]);
 
   useEffect(() => {
-    const API_BASE = import.meta.env.VITE_API_URL;
-
-    fetch(`${API_BASE}/api/properties`)
+    fetch("http://localhost:5000/api/properties")
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data)) {
